@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{588966BC-2CCC-44C5-8F72-EDF53DFCA05A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FSKETCH_V2</RootNamespace>
+    <AssemblyName>FSKETCH V2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="female.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="female.Designer.cs">
+      <DependentUpon>female.cs</DependentUpon>
+    </Compile>
+    <Compile Include="male.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="male.Designer.cs">
+      <DependentUpon>male.cs</DependentUpon>
+    </Compile>
+    <Compile Include="messagebox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="messagebox.Designer.cs">
+      <DependentUpon>messagebox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="select.Designer.cs">
+      <DependentUpon>select.cs</DependentUpon>
+    </Compile>
+    <Compile Include="splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splash.Designer.cs">
+      <DependentUpon>splash.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="female.resx">
+      <DependentUpon>female.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="male.resx">
+      <DependentUpon>male.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="messagebox.resx">
+      <DependentUpon>messagebox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="select.resx">
+      <DependentUpon>select.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splash.resx">
+      <DependentUpon>splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eyebow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\h.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hair.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lip.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\m.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\features.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\threelines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\full-screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\full-screen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screen-brightness.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\action_redo_1-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\action_redo_1-1281.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_063_Undo_183192.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_063_Undo_1831921.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layout.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lips_male\head_folder\uter1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lips_male\head_folder\uter10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lips_male\head_folder\uter11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lips_male\head_folder\uter2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lips_male\head_folder\uter3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lips_male\head_folder\uter4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lips_male\head_folder\uter5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lips_male\head_folder\uter6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lips_male\head_folder\uter7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lips_male\head_folder\uter8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lips_male\head_folder\uter9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eye1_folder\eye1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eye1_folder\eye10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eye1_folder\eye11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eye1_folder\eye12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eye1_folder\eye13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eye1_folder\eye14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eye1_folder\eye15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eye1_folder\eye16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eye1_folder\eye17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eye1_folder\eye18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eye1_folder\eye19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eye1_folder\eye2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eye1_folder\eye20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eye1_folder\eye3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eye1_folder\eye4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eye1_folder\eye5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eye1_folder\eye6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eye1_folder\eye7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eye1_folder\eye8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="eye1_folder\eye9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="eyebrow_folder\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nose_folder\n1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nose_folder\n10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nose_folder\n11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nose_folder\n12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nose_folder\n13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nose_folder\n2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nose_folder\n3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nose_folder\n4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nose_folder\n5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nose_folder\n6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nose_folder\n7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nose_folder\n8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nose_folder\n9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="eyes_female\eye106.png" />
+    <Content Include="eyes_female\eye108.png" />
+    <Content Include="eyes_female\eye14.png" />
+    <Content Include="eyes_female\eye23.png" />
+    <Content Include="eyes_female\eye25.png" />
+    <Content Include="eyes_female\eye27.png" />
+    <Content Include="eyes_female\eye3.png" />
+    <Content Include="eyes_female\eye47.png" />
+    <Content Include="eyes_female\eye48.png" />
+    <Content Include="eyes_female\eye49.png" />
+    <Content Include="eyes_female\eye52.png" />
+    <Content Include="eyes_female\eye55.png" />
+    <Content Include="eyes_female\eye58.png" />
+    <Content Include="eyes_female\eye59.png" />
+    <Content Include="eyes_female\eye67.png" />
+    <Content Include="eyes_female\eye75.png" />
+    <Content Include="eyes_female\eye90.png" />
+    <Content Include="eyes_female\eye94.png" />
+    <Content Include="eyes_female\eye96.png" />
+    <Content Include="eyes_female\eyesample.png" />
+    <Content Include="hair_female\hair.png" />
+    <Content Include="hair_female\hair1.png" />
+    <Content Include="hair_female\hair10.png" />
+    <Content Include="hair_female\hair11.png" />
+    <Content Include="hair_female\hair12.png" />
+    <Content Include="hair_female\hair13.png" />
+    <Content Include="hair_female\hair14.png" />
+    <Content Include="hair_female\hair15.png" />
+    <Content Include="hair_female\hair16.png" />
+    <Content Include="hair_female\hair17.png" />
+    <Content Include="hair_female\hair18.png" />
+    <Content Include="hair_female\hair19.png" />
+    <Content Include="hair_female\hair2.png" />
+    <Content Include="hair_female\hair20.png" />
+    <Content Include="hair_female\hair21.png" />
+    <Content Include="hair_female\hair22.png" />
+    <Content Include="hair_female\hair24.png" />
+    <Content Include="hair_female\hair25.png" />
+    <Content Include="hair_female\hair3.png" />
+    <Content Include="hair_female\hair4.png" />
+    <Content Include="hair_female\hair5.png" />
+    <Content Include="hair_female\hair6.png" />
+    <Content Include="hair_female\hair7.png" />
+    <Content Include="hair_female\hair8.png" />
+    <Content Include="hair_female\hair9.png" />
+    <Content Include="hair_female\hair_female\hair1.png" />
+    <Content Include="hair_female\hair_female\hair10.png" />
+    <Content Include="hair_female\hair_female\hair11.png" />
+    <Content Include="hair_female\hair_female\hair12.png" />
+    <Content Include="hair_female\hair_female\hair13.png" />
+    <Content Include="hair_female\hair_female\hair14.png" />
+    <Content Include="hair_female\hair_female\hair15.png" />
+    <Content Include="hair_female\hair_female\hair16.png" />
+    <Content Include="hair_female\hair_female\hair17.png" />
+    <Content Include="hair_female\hair_female\hair18.png" />
+    <Content Include="hair_female\hair_female\hair19.png" />
+    <Content Include="hair_female\hair_female\hair2.png" />
+    <Content Include="hair_female\hair_female\hair20.png" />
+    <Content Include="hair_female\hair_female\hair21.png" />
+    <Content Include="hair_female\hair_female\hair22.png" />
+    <Content Include="hair_female\hair_female\hair24.png" />
+    <Content Include="hair_female\hair_female\hair25.png" />
+    <Content Include="hair_female\hair_female\hair3.png" />
+    <Content Include="hair_female\hair_female\hair4.png" />
+    <Content Include="hair_female\hair_female\hair5.png" />
+    <Content Include="hair_female\hair_female\hair6.png" />
+    <Content Include="hair_female\hair_female\hair7.png" />
+    <Content Include="hair_female\hair_female\hair8.png" />
+    <Content Include="hair_female\hair_female\hair9.png" />
+    <Content Include="hair_female\hair_female\hhhh.png" />
+    <Content Include="hair_female\hhhh.png" />
+    <Content Include="lips_male\lip1.png" />
+    <Content Include="lips_male\lip10.png" />
+    <Content Include="lips_male\lip11.png" />
+    <Content Include="lips_male\lip12.png" />
+    <Content Include="lips_male\lip13.png" />
+    <Content Include="lips_male\lip14.png" />
+    <Content Include="lips_male\lip15.png" />
+    <Content Include="lips_male\lip16.png" />
+    <Content Include="lips_male\lip17.png" />
+    <Content Include="lips_male\lip18.png" />
+    <Content Include="lips_male\lip19.png" />
+    <Content Include="lips_male\lip2.png" />
+    <Content Include="lips_male\lip20.png" />
+    <Content Include="lips_male\lip21.png" />
+    <Content Include="lips_male\lip22.png" />
+    <Content Include="lips_male\lip23.png" />
+    <Content Include="lips_male\lip24.png" />
+    <Content Include="lips_male\lip25.png" />
+    <Content Include="lips_male\lip26.png" />
+    <Content Include="lips_male\lip27.png" />
+    <Content Include="lips_male\lip28.png" />
+    <Content Include="lips_male\lip29.png" />
+    <Content Include="lips_male\lip3.png" />
+    <Content Include="lips_male\lip30.png" />
+    <Content Include="lips_male\lip31.png" />
+    <Content Include="lips_male\lip32.png" />
+    <Content Include="lips_male\lip33.png" />
+    <Content Include="lips_male\lip34.png" />
+    <Content Include="lips_male\lip35.png" />
+    <Content Include="lips_male\lip36.png" />
+    <Content Include="lips_male\lip37.png" />
+    <Content Include="lips_male\lip38.png" />
+    <Content Include="lips_male\lip4.png" />
+    <Content Include="lips_male\lip40.png" />
+    <Content Include="lips_male\lip41.png" />
+    <Content Include="lips_male\lip42.png" />
+    <Content Include="lips_male\lip43.png" />
+    <Content Include="lips_male\lip44.png" />
+    <Content Include="lips_male\lip45.png" />
+    <Content Include="lips_male\lip46.png" />
+    <Content Include="lips_male\lip47.png" />
+    <Content Include="lips_male\lip48.png" />
+    <Content Include="lips_male\lip49.png" />
+    <Content Include="lips_male\lip5.png" />
+    <Content Include="lips_male\lip50.png" />
+    <Content Include="lips_male\lip51.png" />
+    <Content Include="lips_male\lip52.png" />
+    <Content Include="lips_male\lip53.png" />
+    <Content Include="lips_male\lip54.png" />
+    <Content Include="lips_male\lip55.png" />
+    <Content Include="lips_male\lip56.png" />
+    <Content Include="lips_male\lip57.png" />
+    <Content Include="lips_male\lip58.png" />
+    <Content Include="lips_male\lip59.png" />
+    <Content Include="lips_male\lip6.png" />
+    <Content Include="lips_male\lip7.png" />
+    <Content Include="lips_male\lip8.png" />
+    <Content Include="lips_male\lip9.png" />
+    <Content Include="lips_male\lip_sample.png" />
+    <Content Include="lip_female\lip1.png" />
+    <Content Include="lip_female\lip10.png" />
+    <Content Include="lip_female\lip11.png" />
+    <Content Include="lip_female\lip12.png" />
+    <Content Include="lip_female\lip13.png" />
+    <Content Include="lip_female\lip14.png" />
+    <Content Include="lip_female\lip15.png" />
+    <Content Include="lip_female\lip16.png" />
+    <Content Include="lip_female\lip17.png" />
+    <Content Include="lip_female\lip18.png" />
+    <Content Include="lip_female\lip19.png" />
+    <Content Include="lip_female\lip2.png" />
+    <Content Include="lip_female\lip20.png" />
+    <Content Include="lip_female\lip21.png" />
+    <Content Include="lip_female\lip22.png" />
+    <Content Include="lip_female\lip23.png" />
+    <Content Include="lip_female\lip24.png" />
+    <Content Include="lip_female\lip25.png" />
+    <Content Include="lip_female\lip3.png" />
+    <Content Include="lip_female\lip4.png" />
+    <Content Include="lip_female\lip5.png" />
+    <Content Include="lip_female\lip6.png" />
+    <Content Include="lip_female\lip7.png" />
+    <Content Include="lip_female\lip8.png" />
+    <Content Include="lip_female\lip9.png" />
+    <Content Include="male_hair_folder\hair26.png" />
+    <Content Include="male_hair_folder\hair27.png" />
+    <Content Include="male_hair_folder\hair28.png" />
+    <Content Include="male_hair_folder\hair29.png" />
+    <Content Include="male_hair_folder\hair30.png" />
+    <Content Include="male_hair_folder\hair31.png" />
+    <Content Include="male_hair_folder\hair32.png" />
+    <Content Include="male_hair_folder\hair33.png" />
+    <Content Include="male_hair_folder\hair34.png" />
+    <Content Include="male_hair_folder\hair35.png" />
+    <Content Include="male_hair_folder\hair36.png" />
+    <Content Include="male_hair_folder\hair37.png" />
+    <Content Include="male_hair_folder\hair38.png" />
+    <Content Include="male_hair_folder\hair39.png" />
+    <Content Include="male_hair_folder\hair40.png" />
+    <Content Include="male_hair_folder\hair41.png" />
+    <Content Include="male_hair_folder\hair42.png" />
+    <Content Include="male_hair_folder\hair43.png" />
+    <Content Include="male_hair_folder\hair44.png" />
+    <Content Include="male_hair_folder\hair45.png" />
+    <Content Include="male_hair_folder\hair46.png" />
+    <Content Include="nose_folder\noses.png" />
+    <Content Include="nose_folder\nose_sample.png" />
+    <Content Include="nose_folder\n_sample.png" />
+    <None Include="Resources\capture.png" />
+    <None Include="Resources\artistic-brush1.png" />
+    <None Include="Resources\eraser.png" />
+    <None Include="Resources\artistic-brush.png" />
+    <None Include="Resources\resize.png" />
+    <None Include="Resources\picture.png" />
+    <None Include="Resources\add-text.png" />
+    <None Include="Resources\move.png" />
+    <None Include="Resources\new2.png" />
+    <None Include="Resources\open.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\close.png" />
+    <None Include="Resources\new1.png" />
+    <None Include="Resources\new.png" />
+    <None Include="Resources\female1.png" />
+    <None Include="Resources\female.png" />
+    <None Include="Resources\male.png" />
+    <None Include="Resources\Screenshot %2875%292.png" />
+    <None Include="Resources\Screenshot %2875%291.png" />
+    <None Include="Resources\effect.png" />
+    <None Include="Resources\7.PNG" />
+    <None Include="Resources\6.PNG" />
+    <None Include="Resources\5.PNG" />
+    <None Include="Resources\4.PNG" />
+    <None Include="Resources\3.PNG" />
+    <None Include="Resources\2.PNG" />
+    <None Include="Resources\Screenshot %2875%29.png" />
+    <None Include="Resources\111.PNG" />
+    <None Include="Resources\11.PNG" />
+    <None Include="Resources\1.PNG" />
+    <None Include="Resources\Zoom_out.png" />
+    <None Include="Resources\zoomicon.png" />
+    <None Include="Resources\zoom.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
